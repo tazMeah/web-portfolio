@@ -2,8 +2,15 @@ body {
     margin: 0;
     background-color: rgb(245, 248, 250);
     font-family: "Helvetica Neue";
+}
 
+a {
+    text-decoration: none;
+    color: #1da1f2;
+}
 
+a:hover {
+    text-decoration: underline;
 }
 nav {
     height: 46px;
@@ -169,6 +176,8 @@ main {
 
 main .middle {
     background: white;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 main .middle div {
@@ -233,4 +242,75 @@ i.fa-badge-check {
 #tools span {
     font-size: 15px;
     font-weight: bold;
+}
+
+main .left {
+    width: 290px;
+    margin: 0 0 0 auto;
+}
+
+.left h2 {
+    margin-bottom: 0;
+}
+
+#leftButton {
+    background: #1da1f2;
+    color: white;
+}
+
+
+main .right {
+    width: 290px;
+    margin: 0 auto 0 0;
+}
+.who {
+    display: flex;
+    /* align-items: center; */
+    background: white;
+    padding: 15px;
+    flex-direction: row;
+    margin-bottom: 1px;
+}
+.who > div {
+    display: flex;
+    flex-direction: column;
+}
+.who > div > div {
+    display: flex;
+
+}
+.who h3, .who h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px; 
+}
+
+.who .accentColor {
+    align-self: center;
+}
+
+.who .meta {
+    font-size: 12px;
+    align-self: baseline;
+    position: relative;
+    top: 3px;
+}
+.who a {
+    color: black;
+}
+
+.who a:hover {
+    color: #1da1f2;
+    text-decoration-color: #1da1f2;
+}
+.who button {
+    width: 89px;
+    border-radius: 100px;
+    background: white;
+    align-self: flex-start !important;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1da0f22f;
 }

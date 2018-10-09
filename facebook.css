@@ -3,7 +3,10 @@ body {
     margin: 0;
     background: rgb(233, 235, 238);
 }
-
+a {
+    text-decoration: none;
+    color: #365899;
+}
 nav {
     height: 43px;
     width: 100%;

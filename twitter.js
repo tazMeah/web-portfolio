@@ -49,12 +49,18 @@ const twitter = {
         </div>
     </div>
     <main>
-        <div class="left"></div>
+        <div class="left">
+            <h2>Montaz Meah II <i class="fas fa-badge-check"></i></h2>
+            <p class="meta">@tazmeah</p>
+            <p class="meta"><i class="far fa-calendar-alt"></i> Joined December 2009</p>
+            <p class="meta"><i class="fal fa-map-marker-alt"></i> Southfield, MI</p>
+            <button id="leftButton" class="button">Tweet to Montaz Meah II</button>
+        </div>
         <div class="middle">
             <div>
                 <h2>Twitter</h2>
-                <h2 class="accentColor">Facebook</h2>
-                <h2 class="accentColor">Instagram</h2>
+                <h2 class="accentColor"><a href="#!/facebook">Facebook</a></h2>
+                <h2 class="accentColor"><a href="#!/instagram">Instagram</a></h2>
             </div>
             <div>
                 <img src="4.jpeg" class="avatar">
@@ -86,7 +92,32 @@ const twitter = {
                 <div></div>
             </div>
         </div>
-        <div class="right"></div>
+        <div class="right">
+            <div class="who">
+                <h3>Who to follow</h3><span class="accentColor"> • Refresh</span>
+            </div>
+
+            <div class="who">
+                <img class="avatar" id="matty" src="https://pbs.twimg.com/profile_images/2281193589/2oq66j36wsw54nosmuwj_400x400.jpeg">
+                <div>
+                    <div>
+                    <a href="https://twitter.com/KrukMatt"><h4>Matthew Kruk</h4></a><span class="meta">@KrukMatt</span>
+                    </div>
+                    <a href="https://twitter.com/KrukMatt"><button class="accentColor button">Follow</button></a>
+                </div>
+            </div>
+
+            <div class="who">
+                <img class="avatar" id="matty" src="https://pbs.twimg.com/profile_images/691387694522322944/6bXZWy6Q_400x400.png">
+                <div>
+                    <div>
+                    <a href="https://twitter.com/benjaminrvasko"><h4>Ben Vasko</h4></a><span class="meta">@benjaminvasko</span>
+                    </div>
+                    <a href="https://twitter.com/benjaminrvasko"><button class="accentColor button">Follow</button></a>
+                </div>
+            </div>
+
+        </div>
     </main>
 
     `
