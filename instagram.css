@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    background: rgb(250, 250, 250);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+nav {
+    background: white;
+    height: 77px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0941176);
+
+
+}
+
+nav > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1010px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav > div > div {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+nav h2 {
+    margin: 0;
+}
+
+#logo {
+    width: 103px;
+    font-family:  cursive;
+    font-weight: 100;
+}
+
+nav i {
+    margin-right: 30px;
+}
+
+nav input {
+    padding: 7px 15px;
+    font-size: 14px;
+}
+
+nav ::placeholder {
+    text-align: center;
+}
+main {
+    max-width: 1010px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 60px 20px 0px 20px;
+    
+}
+
+main > div {
+    display: flex;
+}
+
+#profileHolder {
+    width: 292px;
+    height: 226px;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+#profilePic {
+    height: 152px;
+    width: 152px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    text-transform: lowercase;
+    font-weight: 100;
+    margin-top: 0;
+    /* margin-bottom: 0; */
+    display: flex;
+    align-items: center;
+}
+
+.fa-badge-check {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 10px;
+    color: rgb(56, 151, 240);;
+}
+
+h1 button {
+    background: rgb(56, 151, 240);
+    color: white;
+    border: none;
+    padding: 0 24px;
+    line-height: 26px;
+    border-radius: 3px;
+}
+
+#stats {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+#stats span {
+    margin-right: 50px;
+}
+
+#bio {
+    max-width: 613px;
+}
+
+.meta {
+    font-size: 14px;
+    color: #777;
+}
+
+article {
+    border-top: 1px solid #ddd;
+    margin-top: 44px;
+}
+
+a {
+    color: rgb(56, 151, 240);
+}
+
+#tabs {
+    display: flex;
+    justify-content: center;
+    color: rgb(153, 153, 153);
+}
+
+#tabs h4 {
+    margin-top: 0;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+#tabs h4:hover {
+    border-top: 1px solid black;
+    color: black;
+    transition: 500ms;
+}
+
+#tabs h4:first-child {
+    margin-right: 50px;
+    color: rgb(38, 38, 38);
+    border-top: 1px solid black;
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+}
+
+section div {
+    max-width: 293px;
+    height: 293px;
+    width: 100%;
+}
