@@ -19,7 +19,7 @@ const twitter = {
         </div>
     </nav>
     <div id="splash">
-        <img src="4.jpeg" title="Montaz Meah II">
+        <img id="profilePic" src="4.jpeg" title="Montaz Meah II">
     </div>
     <div id="follow">
         <!--
@@ -29,7 +29,7 @@ const twitter = {
         <div class="middle">
             <div>
                 <h3>Tweets</h3>
-                <span class="accentColor">500</span>
+                <span class="accentColor">1</span>
             </div>
             <div>
                 <h3>Following</h3>
@@ -57,6 +57,33 @@ const twitter = {
                 <h2 class="accentColor">Instagram</h2>
             </div>
             <div>
+                <img src="4.jpeg" class="avatar">
+                <div class="stack">
+                    <div>
+                        <h4>Montaz Meah II</h4>
+                        <i class="fas fa-badge-check"></i>
+                        <span class="meta">@tazmeah • Oct 3</span>
+                    </div>
+                    <div>
+                        <p>Fun times with everyone over @GrandCircusCo. Learned so much.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image" id="img01"></div>
+            <div id="tools" class="meta">
+                <div>
+                    <i class="far fa-comment"></i> 
+                    <span>14</span>
+                </div>
+                <div>
+                    <i class="fal fa-retweet" ></i>
+                    <span>154</span>
+                </div>
+                <div>
+                    <i class="fal fa-heart"></i>
+                    <span>3,112</span>
+                </div>
+                <div></div>
             </div>
         </div>
         <div class="right"></div>

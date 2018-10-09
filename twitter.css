@@ -70,7 +70,7 @@ i span {
     background-repeat: no-repeat;
     position: relative;
 }
-img[src="4.jpeg"] {
+#profilePic {
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -159,6 +159,10 @@ main {
     color: #1da1f2;
 }
 
+.meta {
+    color: rgb(101, 119, 134);
+}
+
 main {
     margin-top: 10px;
 }
@@ -175,4 +179,58 @@ main .middle div {
 main .middle div h2 {
     margin: 15px;
     font-size: 18px;
+}
+
+.avatar {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+i.fa-badge-check {
+    font-size: 15px;
+    vertical-align: text-top;
+    margin: 0 3px;
+    color: #1da1f2;
+}
+.stack {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#img01 {
+    background: url(class.jpg);
+    background-size: cover;
+    background-position-x: 68px;
+    background-repeat: no-repeat;
+    height: 506px;
+    width: 100%;
+}
+
+#tools {
+    padding-left: 68px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+#tools .fa-comment {
+    transform: scaleX(-1);
+}
+
+#tools i {
+    margin: 0 7px 0 15px ; 
+    font-size: 18px;
+}
+
+#tools span {
+    font-size: 15px;
+    font-weight: bold;
 }
