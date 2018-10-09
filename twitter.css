@@ -88,27 +88,38 @@ i span {
     width: 200px;
     border-radius: 50%;
     position: absolute;
-    bottom: -86px;
-    left: 91px; 
+    top: -200px;
     border: 5px solid white;
     
 }
 
 #follow {
-    height: 60px;
     box-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 3px 0px;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    /* padding: 0 70px; */
     background: white;
+
+}
+
+#follow > div {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 23% 54% 23%;
+    /* padding: 0 70px; */
+    max-width: 1190px;
+    margin: 0 auto;
 }
 
 main {
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 23% 54% 23%;
+    max-width: 1190px;
+    margin: 0 auto;
 }
 #follow .left {
     height: 60px;
+    display: flex;
+    justify-content: center;
+    width: 290px;
+    margin: 0 0 0 auto;
 }
 #follow .middle {
     display: flex;
@@ -151,6 +162,8 @@ main {
     display: flex;
     align-items: center; 
     justify-content: center;
+    width: 290px;
+    margin: 0 auto 0 0;
 }
 
 #follow button {
@@ -253,6 +266,7 @@ i.fa-badge-check {
 main .left {
     width: 290px;
     margin: 0 0 0 auto;
+    position: relative;
 }
 
 .left h2 {

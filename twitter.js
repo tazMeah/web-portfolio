@@ -19,37 +19,37 @@ const twitter = {
         </div>
     </nav>
     <div id="splash">
-        <img id="profilePic" src="4.jpeg" title="Montaz Meah II">
     </div>
     <div id="follow">
-        <!--
-        <i class="fas fa-badge-check" style="font-size: 48px;"></i>
-        -->
-        <div class="left"></div>
-        <div class="middle">
-            <div>
-                <h3>Tweets</h3>
-                <span class="accentColor">1</span>
+        <div>
+            <div class="left">
             </div>
-            <div>
-                <h3>Following</h3>
-                <span>120</span>
+            <div class="middle">
+                <div>
+                    <h3>Tweets</h3>
+                    <span class="accentColor">1</span>
+                </div>
+                <div>
+                    <h3>Following</h3>
+                    <span>120</span>
+                </div>
+                <div>
+                    <h3>Followers</h3>
+                    <span>14M</span>
+                </div>
+                <div>
+                    <h3>Likes</h3>
+                    <span>874</span>
+                </div>
             </div>
-            <div>
-                <h3>Followers</h3>
-                <span>14M</span>
+            <div class="right">
+                <button class="button accentColor">Follow</button>
             </div>
-            <div>
-                <h3>Likes</h3>
-                <span>874</span>
-            </div>
-        </div>
-        <div class="right">
-            <button class="button accentColor">Follow</button>
         </div>
     </div>
     <main>
         <div class="left">
+            <img id="profilePic" src="4.jpeg" title="Montaz Meah II">
             <h2>Montaz Meah II <i class="fas fa-badge-check"></i></h2>
             <p class="meta">@tazmeah</p>
             <p class="meta"><i class="far fa-calendar-alt"></i> Joined December 2009</p>
