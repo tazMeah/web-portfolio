@@ -16,7 +16,7 @@ angular.module("app").config(function($routeProvider){
         `
     })
     .otherwise({
-        redirectTo: "/facebook"
+        redirectTo: "/instagram"
     })
 
 })

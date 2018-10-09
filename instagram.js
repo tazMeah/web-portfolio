@@ -56,7 +56,7 @@ const instagram = {
                 <h4><i class="fal fa-user-tag"></i> TAGGED</h4>
             </div>
             <section>
-                <div ng-repeat="picture in $ctrl.pictures" style="background: url({{picture.url}}); background-size:cover; background-repeat:no-repeat" title="{{picture.attr}}"></div>
+                <div ng-repeat="picture in $ctrl.pictures" style="background: url({{picture.url}}); background-size:cover; background-repeat:no-repeat;" title="{{picture.attr}}"></div>
             </section>
         
         </article>
