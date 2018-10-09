@@ -55,6 +55,12 @@ nav ::placeholder {
     line-height: 40px;
     border-bottom: 2px solid rgba(0,0,0,0);
     cursor: pointer;
+    color: black;
+}
+
+#socialLinks i span {
+    font-family: "Helvetica Neue";
+
 }
 
 #socialLinks i:hover {

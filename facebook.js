@@ -6,20 +6,20 @@ const facebook = {
 
     <nav>
     <div>
-        <i class="fab fa-facebook"></i>
+        <i title="Facebook" class="fab fa-facebook"></i>
         <input placeholder="Montaz Meah II">
     </div>
     <div id="socialLinks">
-        <i class="fab fa-squarespace"></i>
-        <i class="fab fa-github-square"></i>
-        <i class="fab fa-codepen"></i>
-        <i class="fab fa-linkedin"></i>
+        <a title="SquareSpace" href="https://answers.squarespace.com/users/14134/tazmeah.html"><i class="fab fa-squarespace"></i></a>
+        <a title="GitHub" href="https://github.com/tazMeah?tab=repositories"><i class="fab fa-github-square"></i></a>
+        <a title="CodePen" href="https://codepen.io/dashboard?type=view&opts_itemType=pen&opts_filter=all&opts_orderBy=id&opts_orderDirection=0&opts_tag=0&displayType=grid&previewType=iframe&page=0"><i class="fab fa-codepen"></i></a>
+        <a title="LinkedIn" href="https://www.linkedin.com/in/montaz-meah-ii/"><i class="fab fa-linkedin"></i></a>
     </div>
     <i class="fab fa-twitter"></i>
 </nav>
     <div id="profile-container">
         
-        <img src="me.jpg">
+        <img src="me.jpg" alt="Montaz" title="Montaz Meah II">
         <h1>Montaz Meah II</h1>
         <h2>(Taz)</h2>
         <div id="buttons">

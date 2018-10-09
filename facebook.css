@@ -21,6 +21,11 @@ nav {
     font-size: 30px;
 }
 
+#socialLinks a {
+    color: white;
+}
+
+
 #socialLinks i {
     margin-left: 10px;
 }
