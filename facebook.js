@@ -91,10 +91,18 @@ const facebook = {
                     <!-- <input type="text" placeholder="Write something to Taz..."> -->
                     <textarea placeholder="Write something to Taz..."></textarea>
                 </div>
+
                 <div class="lg">
                     <button><i class="fas fa-image"></i> Photo/Video</button>
                     <button><i class="fas fa-user-tag"></i> Tag Friends</button>
                     <button><i class="far fa-grin-alt"></i> Feeling/Activity</button>
+                    <button id="elip">•••</button>
+                </div>
+
+                <div class="sm">
+                    <button><i class="fas fa-image"></i></button>
+                    <button><i class="fas fa-user-tag"></i></button>
+                    <button><i class="far fa-grin-alt"></i></button>
                     <button id="elip">•••</button>
                 </div>
                

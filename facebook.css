@@ -4,6 +4,9 @@ body {
     background: rgb(233, 235, 238);
 }
 
+button {
+    outline: none;
+}
 
 a {
     text-decoration: none;
@@ -331,7 +334,6 @@ aside li i {
 #comment {
     padding: 10px;
     background: white;
-    padding-bottom: 0;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -485,8 +487,12 @@ aside li i {
     font-size: 12px;
 }
 
-.small {
+#comment > div.sm {
     display: none;
+}
+
+#comment > div:nth-child(4) > button {
+    margin-left: 10px;
 }
 
 @media only screen and (max-width: 850px) {
@@ -546,9 +552,31 @@ aside li i {
     
 }
 
-@media only screen and (max-width: 504px) {
+@media only screen and (max-width: 515px) {
+    #comment  {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #comment > div.lg {
+        display: none;
+    }
+
+    #comment > div.sm {
+        display: initial;
+        margin: 0 auto;
+    }
+
+    #comment > div.sm button {
+    }
+
+    #comment > div.sm i {
+
+    }
+
     
 }
+
 
 @media only screen and (max-width: 470px) {
     #fb-menu > div:nth-child(4), #fb-menu > div:nth-child(6) {
