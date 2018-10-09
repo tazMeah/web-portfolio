@@ -3,17 +3,26 @@ body {
     margin: 0;
     background: rgb(233, 235, 238);
 }
+
+
 a {
     text-decoration: none;
     color: #365899;
 }
+
 nav {
+    background: #4267b2;
+}
+
+nav > div{
     height: 43px;
     width: 100%;
     background: #4267b2;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1390px;
 }
 
 #socialLinks {
