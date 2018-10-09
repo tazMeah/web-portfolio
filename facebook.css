@@ -178,6 +178,7 @@ aside {
 main section {
     /* height: 100vh; */
     /* border: 1px solid #ddd; */
+    max-width:  487px;
 }
 
 aside #intro i {
@@ -467,8 +468,3 @@ aside li i {
     font-size: 12px;
 }
 
-/* twitter stuff */
-
-#twitterhandle {
-    display: none;
-}

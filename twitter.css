@@ -1,119 +1,178 @@
 body {
     margin: 0;
+    background-color: rgb(245, 248, 250);
     font-family: "Helvetica Neue";
-    background: rgb(230, 236, 240);
-}
-#profile-container {
-    width: 100%;
-    height: 320px;
-    background: url("splash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    position: relative;
+
 
 }
 nav {
     height: 46px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 1px solid black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr;
+    align-items: center; 
+    text-align: center;
     background: white;
+}
 
+nav i {
+    font-size: 22px;
+    margin: 0 10px;
+    color: (102, 117, 127); 
+}
 
+nav input {
+    padding: 7px;
+    width: 221px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: rgb(245, 248, 250);
+}
+
+nav button {
+    background: #1da1f2;
+    color: white !important;
+}
+
+nav ::placeholder {
+    color: rgb(102, 117, 127);
+    font-size: 12px;
 }
 
 #socialLinks {
-    order: -1;
+    color: rgb(102, 117, 127);
 }
 
 #socialLinks i {
-    height: 23px;
-    margin-right: 20px;
-    color: rgb(102, 117, 127);
+    line-height: 40px;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    cursor: pointer;
 }
 
 #socialLinks i:hover {
     color: black;
-    transition: 200ms;
-    cursor: pointer;
-    border-bottom: 5px solid black;
+    border-bottom: 2px solid black;
     transition: 200ms;
 }
+i.fa-twitter {
+    color: #1da1f2;
+}
+i span {
+    font-size: 14px;
+}
 
-.fa-twitter {
-    /* position: absolute;
-    margin: 0 auto;
-    height: 56px; */
-    color: #1DA1F2;
-    order: -1;
-    font-size: 20px;
+#splash {
+    background: url("splash.jpg");
+    height: 380px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
-    right: 105px;
 }
-
-#socialLinks span {
-    margin-left: 5px;
-
-}
-#profile-container h1 {
-   position: absolute;
-   left: 80px;
-   bottom: -150px;
-   font-size: 25px;
-}
-
-#profile-container h1:hover {
-   text-decoration: underline;
-   cursor: pointer;
-}
-
-#profile-container h2 {
-    display: none;
-}
-
-
-img[src="me.jpg"] {
+img[src="4.jpeg"] {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    border: 5px solid white;
     position: absolute;
-    bottom: -100px;
-    left: 70px;
-    transition: 1000ms;
-
-}
-
-h1 {
-    margin-top: 0;
-
-}
-
-nav input {
-    /* position: relative;
-    bottom: 12px;
-    padding: 7px; */
-    border-radius: 20px;
-    border: 1px solid #ddd;
-    background-color: rgb(245, 248, 250);
-    width: 221px;
-    padding: 10px;
+    bottom: -86px;
+    left: 91px; 
+    border: 5px solid white;
     
 }
 
-nav ::placeholder {
-    color: #777;
-    font-size: 12px;
-    line-height: 16px;
+#follow {
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 3px 0px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    /* padding: 0 70px; */
+    background: white;
 }
 
-#twitterhandle {
+main {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+#follow .left {
+    height: 60px;
+}
+#follow .middle {
+    display: flex;
+    height: 60px;
+}
+
+#follow .middle div {
+    padding: 14px;
+    text-align: center;
     position: relative;
-    left: 80px;
-    top: 455px;
-    margin-top: 0;
-    color:rgb(101, 119, 134);
-    font-weight: 400;
+    bottom: 15px; 
+}
+
+#follow .middle h3 {
+    font-size: 12px;
+    color: #657786;
+    margin-bottom: 0;
+}
+
+#follow .middle span {
+    font-size: 21px;
+    font-weight: 600;
+    border-bottom: 3px solid rgba(0,0,0,0);
+    padding-bottom: 7px; 
+    cursor: pointer;
+}
+
+#follow .middle span:hover {
+    border-bottom: 3px solid #1da1f2;
+    transition: 200ms;
+    color: #1da1f2;
+}
+#follow .middle span.accentColor {
+    border-bottom: 3px solid #1da1f2;
+    transition: 200ms;
+}
+
+#follow .right {
+    height: 60px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+#follow button {
+    
+    background: white;
+    color: #1da1f2;
+    width: 105px;
+    height: 35px;
+}
+
+.button {
+    padding: 6px 16px;
+    font-size: 14px;
+    border-radius: 100px;
+    border: 1px solid #1da1f2;
+}
+
+.accentColor {
+    color: #1da1f2;
+}
+
+main {
+    margin-top: 10px;
+}
+
+main .middle {
+    background: white;
+}
+
+main .middle div {
+    display: flex;
+    margin-bottom: 1px;
+}
+
+main .middle div h2 {
+    margin: 15px;
+    font-size: 18px;
 }

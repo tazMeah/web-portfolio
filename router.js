@@ -7,6 +7,12 @@ angular.module("app").config(function($routeProvider){
     })
     .when("/twitter", {
         template: `
+        <twitter></twitter>
+        `
+    })
+    .when("/instagram", {
+        template: `
+        <instagram></instagram>
         `
     })
     .otherwise({

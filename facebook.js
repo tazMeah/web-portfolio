@@ -2,17 +2,18 @@
 
 const facebook = {
     template: `
-    
+    <link href="facebook.css" rel="stylesheet" type="text/css" >
+
     <nav>
     <div>
-        <i class="fab fa-facebook" ng-if="social === 'facebook'"></i>
+        <i class="fab fa-facebook"></i>
         <input placeholder="Montaz Meah II">
     </div>
     <div id="socialLinks">
-        <i class="fab fa-squarespace"><span ng-if="social==='twitter'">Squarespace</span></i>
-        <i class="fab fa-github-square"><span ng-if="social==='twitter'">GitHub</span></i>
-        <i class="fab fa-codepen"><span ng-if="social==='twitter'">Codepen</span></i>
-        <i class="fab fa-linkedin"><span ng-if="social==='twitter'">LinkedIn</span></i>
+        <i class="fab fa-squarespace"></i>
+        <i class="fab fa-github-square"></i>
+        <i class="fab fa-codepen"></i>
+        <i class="fab fa-linkedin"></i>
     </div>
     <i class="fab fa-twitter"></i>
 </nav>
@@ -21,7 +22,6 @@ const facebook = {
         <img src="me.jpg">
         <h1>Montaz Meah II</h1>
         <h2>(Taz)</h2>
-        <h4 id="twitterhandle">@tazmeah</h4>
         <div id="buttons">
             <div><i class="fas fa-check"></i> Friends</div>
             <div><i class="fas fa-check"></i> Following</div>
@@ -31,10 +31,10 @@ const facebook = {
     </div>
     <div id="fb-menu" ng-init="friends=8" >
         <div></div>
-        <div ng-click="social='facebook'">Facebook</div>
-        <div ng-click="social='twitter'">Twitter</div>
+        <div>Facebook</div>
+        <div><a href="#!/twitter" ng-click="social='twitter'">Twitter</a></div>
         <div ng-click="friends = friends + 1">Friends <span >{{friends}} Mutual</span></div>
-        <div><a ng-click="social=instagram">Instagram</a></div>
+        <div><a href="#!/instagram">Instagram</a></div>
         <div>More <i class="fas fa-caret-down"></i></div>
         <div></div>
     </div>
@@ -127,6 +127,9 @@ const facebook = {
         </section>
     </main>
     `,
+    controller: function($location){
+        const vm = this;
+    }
 };
 
 
