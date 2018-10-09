@@ -1,0 +1,474 @@
+body {
+    font-family: system-ui, -apple-system;
+    margin: 0;
+    background: rgb(233, 235, 238);
+}
+
+nav {
+    height: 43px;
+    width: 100%;
+    background: #4267b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#socialLinks {
+    color: white;
+    font-size: 30px;
+}
+
+#socialLinks i {
+    margin-left: 10px;
+}
+
+.fa-twitter {
+    display: none;
+}
+
+.fa-facebook {
+    color: white;
+    font-size: 30px;
+}
+
+nav input {
+    height: 30px;
+    box-sizing: border-box;
+    width: 170px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: none;
+    padding-left: 10px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 3px;
+}
+
+nav ::placeholder {
+    color: black;
+}
+
+#profile-container {
+    width: 851px;
+    height: 315px;
+    background: url("splash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+img[src="me.jpg"] {
+    display: none;
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    border: 5px solid white;
+    border-radius: 2px;
+    outline: 1px solid #ddd;
+    display: initial;
+
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 200px;
+    font-weight: 300;
+}
+
+h2 {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 200px;
+    font-weight: 300;
+}
+
+#buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    display: flex;
+    color: #333;
+}
+
+#buttons div {
+    border: 1px solid #777;
+    background: #efefef;
+    padding: 7px;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+#buttons div:first-child {
+    margin-right: 15px;
+}
+
+#buttons div:nth-child(3) {
+    border-left: none;
+    border-right: none;
+}
+
+#fb-menu {
+    width: 851px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% auto auto 17% auto 13%  25%;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    text-align: center;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+#fb-menu div {
+    padding: 15px;
+}
+
+#fb-menu div span {
+    color: #777;
+    font-size: 10px;
+}
+
+#fb-menu div:hover {
+    background: #efefef;
+    cursor: pointer;
+}
+
+#fb-menu div:not(:nth-child(2)) {
+    color: #365899;
+}
+
+#fb-menu div:first-child, #fb-menu div:last-child {
+    width: 20%;
+}
+
+#fb-menu div:not(:first-child):not(:last-child) {
+    border-left: 1px solid #ddd;
+}
+
+#fb-menu div:nth-child(6) {
+    border-right: 1px solid #ddd;
+}
+
+#fb-menu div:first-child:hover, #fb-menu div:last-child:hover {
+    background: none;
+    cursor: auto;
+}
+
+main {
+    width: 851px;
+    display: grid;
+    grid-template-columns: 41% 59%;
+    margin: 15px auto;
+    grid-gap: 15px;
+}
+
+aside {
+    /* height: 100vh; */
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: white;
+}
+
+main section {
+    /* height: 100vh; */
+    /* border: 1px solid #ddd; */
+}
+
+aside #intro i {
+    background: #365899;
+    font-size: 16px;
+    color: white;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+aside h3 {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 10px;
+    background: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside li i {
+    margin-right: 10px;
+}
+
+#intro {
+    background: white;
+    padding: 7px;
+
+}
+#bio {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: #ddd 1px solid;
+    margin-bottom: 0;
+}
+
+#collage {
+    height: 350px;
+    background: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0;
+}
+
+#collage div:nth-child(1) {
+    background: url(me2.jpg);
+    background-size: cover;
+    background-position-x: center;
+
+}
+#collage div:nth-child(2) {
+    background: url(1.jpeg);
+    background-size: cover;
+    background-position-y: center; 
+
+}
+#collage div:nth-child(3) {
+    background: url(2.jpg);
+    background-size: cover;
+    background-position-x: center;
+
+}
+#collage div:nth-child(4) {
+    background: url(3.jpg);
+    background-size: cover;
+    transform: rotate(90deg);
+    background-position-x: center;
+    background-position-y: center;
+
+}
+#collage div:nth-child(5) {
+    background: url(4.jpeg);
+    background-size: cover;
+
+}
+#collage div:nth-child(6) {
+    background: url(5.jpeg);
+    background-size: cover;
+
+}
+
+#actualfacebook {
+    display: flex;
+    justify-content: center;
+}
+#actualfacebook button {
+    padding: 10px;
+    position: relative;
+    /* bottom: 70px; */
+    margin: 0 auto !important;
+    background: #9cb4d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 500ms;
+}
+
+#actualfacebook button:hover {
+    background: #365899;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+#tabs {
+    padding: 10px;
+    background: #efefef;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+#tabs span {
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+#tabs span:first-child {
+    border-right: 1px solid #777;
+}
+
+#comment {
+    padding: 10px;
+    background: white;
+    padding-bottom: 0;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#comment div {
+    display: flex;
+
+}
+
+#comment input, #comment textarea {
+    padding: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    border: none;
+    outline: none;
+    line-height: 22px;
+    position: relative;
+    bottom: 8px;
+    font-size: 16px;
+    resize: none;
+}
+
+#comment  ::placeholder {
+    font-size: 16px;
+}
+
+.fa-user-circle {
+    font-size: 34px;
+    margin-right: 15px;
+} 
+#comment div:nth-child(2) {
+    border-top: 1px solid #ddd;
+    padding: 10px 0px;
+}
+
+#comment div:nth-child(2) i {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.fa-image {
+    background: linear-gradient(to bottom right,yellow 30%, green);
+    
+}
+.fa-user-tag {
+    background: hsl(210, 100%, 70%);
+    padding: 7px;
+    border-radius: 50%;
+}
+.fa-grin-alt {
+    background: hsl(50, 100%, 50%);
+    border-radius: 50%;
+}
+
+#comment button {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    background: rgb(233, 235, 238);
+}
+
+#elip {
+    width: 70px;
+    color: #777;
+}
+
+#comment div:nth-child(3) {
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#comment div:nth-child(3) button {
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px !important;
+    margin-left: 20px;
+    color: white;
+    background: #3659999a;
+}
+
+.fa-cog {
+    position: relative;
+    top: 10px;
+    color: #777;
+}
+
+.user {
+    height: 40px;
+    width: 40px;
+    background: url("me.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#post {
+    /* padding: 10px; */
+    margin-top: 15px;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+#post > div {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    padding: 10px;
+}
+
+.user  {
+    display: flex;
+    flex-direction: column;
+}
+
+#post  div:nth-child(2) span:first-child{
+    color: #365899;
+}
+
+#post  div:nth-child(2) span:nth-of-type(2) {
+    color: #777;
+}
+
+#post div:nth-child(3) {
+    color: #777;
+}
+
+#thumbnail {
+    background: url(class.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#post p {
+    margin-bottom: 15px;
+    padding: 10px;
+    margin-top: 0;
+}
+
+#views {
+    padding: 10px;
+    color: #777;
+    font-size: 12px;
+}
+
+/* twitter stuff */
+
+#twitterhandle {
+    display: none;
+}

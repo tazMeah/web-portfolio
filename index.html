@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-init="social='facebook'">
+<head>
+    <meta charset="UTF-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Montaz Meah II</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link ng-if="social==='facebook'" href="facebook.css" rel="stylesheet" type="text/css" ng-if="true">
+    <link ng-if="social==='twitter'" href="twitter.css" rel="stylesheet" type="text/css" ng-if="true">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div>
+            <i class="fab fa-facebook" ng-if="social === 'facebook'"></i>
+            <input placeholder="Montaz Meah II">
+        </div>
+        <div id="socialLinks">
+            <i class="fab fa-squarespace"><span ng-if="social==='twitter'">Squarespace</span></i>
+            <i class="fab fa-github-square"><span ng-if="social==='twitter'">GitHub</span></i>
+            <i class="fab fa-codepen"><span ng-if="social==='twitter'">Codepen</span></i>
+            <i class="fab fa-linkedin"><span ng-if="social==='twitter'">LinkedIn</span></i>
+        </div>
+        <i class="fab fa-twitter"></i>
+    </nav>
+        <div id="profile-container">
+            
+            <img src="me.jpg">
+            <h1>Montaz Meah II</h1>
+            <h2>(Taz)</h2>
+            <h4 id="twitterhandle">@tazmeah</h4>
+            <div id="buttons">
+                <div><i class="fas fa-check"></i> Friends</div>
+                <div><i class="fas fa-check"></i> Following</div>
+                <div><i class="fas fa-comment"></i> Message</div>
+                <div>•••</div>
+            </div>
+        </div>
+        <div id="fb-menu" ng-init="friends=8" >
+            <div></div>
+            <div ng-click="social='facebook'">Facebook</div>
+            <div ng-click="social='twitter'">Twitter</div>
+            <div ng-click="friends = friends + 1">Friends <span >{{friends}} Mutual</span></div>
+            <div><a ng-click="social=instagram">Instagram</a></div>
+            <div>More <i class="fas fa-caret-down"></i></div>
+            <div></div>
+        </div>
+    
+        <main>
+            <aside>
+                <div id="intro">
+                    <h3><i class="fas fa-globe-americas"></i> Intro</h3>
+                    <p id="bio">
+                        Utility Technician turned web developer.
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <i class="fas fa-briefcase"></i>
+                        Works for <em>You</em>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        From Detroit, Michigan
+                    </li>
+                    <li>
+                        <i class="fas fa-heart"></i>
+                        Loves Web Development
+                    </li>
+                    <li>
+                        <i class="fas fa-rss"></i>
+                        Followed by 800 people
+                    </li>
+                </ul>
+                <div id="collage">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="actualfacebook">
+                    <button>Hire Me</button>
+                </div>
+
+
+            </aside>
+            <section>
+                <div id="tabs">
+                    <span><i class="fas fa-pencil-alt"></i> Make Post</span>
+                    <span><i class="fas fa-camera"></i> Photo/Video</span>
+                </div>
+                <div id="comment">
+                    <div>
+                        <i class="fas fa-user-circle"></i>
+                        <!-- <input type="text" placeholder="Write something to Taz..."> -->
+                        <textarea placeholder="Write something to Taz..."></textarea>
+                    </div>
+                    <div>
+                        <button><i class="fas fa-image"></i> Photo/Video</button>
+                        <button><i class="fas fa-user-tag"></i> Tag Friends</button>
+                        <button><i class="far fa-grin-alt"></i> Feeling/Activity</button>
+                        <button id="elip">•••</button>
+                    </div>
+                    <div>
+                        <i class="fas fa-cog"></i>
+                        <button>Post</button>
+                    </div>
+                </div>
+
+                <div id="post">
+                    <div>
+                        <div class="user"></div>
+                        <div>
+                            <span>Montaz Meah II</span>
+                            <br>
+                            <span>September 21 at 7:29 PM •</span>
+                        </div>
+                        <div>•••</div>
+                    </div>
+                    <p>I graduated from Grand Circus! (Me in the red plaid.)</p>
+                    <div id="thumbnail">
+                    </div>
+                    <span id="views">
+                        23,271,000 Views
+                    </span>
+                    
+                    <div></div>
+                    <!-- <div></div>
+                    <div></div>
+                    <div></div> -->
+                </div>
+            </section>
+        </main>
+        <script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>
+        <script src="module.js"></script>
+        <script src="router.js"></script>
+</body>
+</html>
