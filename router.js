@@ -1,8 +1,8 @@
 angular.module("app").config(function($routeProvider){
     $routeProvider
-    .when("/profile", {
+    .when("/facebook", {
         template: `
-        
+        <facebook></facebook>
         `
     })
     .when("/twitter", {
