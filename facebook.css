@@ -485,3 +485,77 @@ aside li i {
     font-size: 12px;
 }
 
+.small {
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+    #profile-container, #fb-menu {
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        max-width: initial !important;
+    }
+
+    #comment > div:nth-child(2) {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    #fb-menu {
+        grid-template-columns: auto auto auto auto auto;
+    }
+    #fb-menu > div:nth-child(1), #fb-menu > div:nth-child(7) {
+        display: none;
+    }
+
+    #profile-container {
+        text-align: center;
+    }
+    #profile-container img, h1, h2, #buttons {
+        position: relative;
+        margin: 5px;
+        bottom: 0;
+        left: 0;
+    }
+    #buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 644px) {
+    #fb-menu > div:nth-child(1), #fb-menu > div:nth-child(7) {
+        display: none;
+    }
+
+    
+}
+
+@media only screen and (max-width: 504px) {
+    
+}
+
+@media only screen and (max-width: 470px) {
+    #fb-menu > div:nth-child(4), #fb-menu > div:nth-child(6) {
+        display: none;
+    }
+
+    #fb-menu {
+        grid-template-columns: auto auto auto;
+    }
+}
