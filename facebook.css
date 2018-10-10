@@ -462,7 +462,9 @@ aside li i {
 #post  div:nth-child(2) span:nth-of-type(2) {
     color: #777;
 }
-
+#post > div:nth-child(1) > div:nth-child(2) {
+    margin-left:10px;
+}
 #post div:nth-child(3) {
     color: #777;
 }

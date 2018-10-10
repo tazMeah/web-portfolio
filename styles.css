@@ -1,0 +1,47 @@
+header {
+    height: 200px;
+    background: linear-gradient(to bottom right, white, pearl);
+    background: white;
+    margin: 0;
+    display: flex;
+    padding: 2% 20%;
+    border-bottom: 1px solid darkslategrey;
+    font-family: "Cabin";
+    
+}
+
+header div {
+    height: 150px;
+    width: 160px;
+    background: url("Montaz.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border: 10px inset oldlace;
+    margin-right: 20px;
+
+    
+    /* border: 5px solid #549797;
+    border: 5px solid #fb8c8c;
+    border: 5px solid #667aa8;
+    border: 5px solid #fbd68c;
+    border: 5px solid #70C970;
+    /* border: 5px solid #76502C; */
+    /* border: 5px solid #21592e; */
+
+}
+
+header p {
+    max-width: 600px;
+    color: rgba(0,0,0,.8);
+    font-size: 18px;
+    line-height: 26px;
+    align-self: center;
+}
+
+header span {
+    border-bottom: 2px solid oldlace;
+    font-family: "Roboto Condensed";
+    font-size: 22px;
+}

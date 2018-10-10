@@ -75,7 +75,7 @@ main > div {
     height: 152px;
     width: 152px;
     border-radius: 50%;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
 }
 
 h1 {

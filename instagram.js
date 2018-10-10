@@ -12,16 +12,16 @@ const instagram = {
                 <input placeholder="Montaz Meah II">
             </div>
             <div>
-                <i class="fal fa-compass"></i>
-                <i class="fal fa-heart"></i>
-                <i class="fal fa-user"></i>
+            <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-user"></i>
             </div>
         </div>
     </nav>
     <main>
         <div>
             <div id="profileHolder">
-                <img id="profilePic" src="3.jpg">
+                <img id="profilePic" src="2.jpg">
             </div>
             <div>
                 <div>
@@ -52,8 +52,8 @@ const instagram = {
         </div>
         <article>
             <div id="tabs">
-                <h4><i class="fal fa-calendar-alt"></i> POSTS</h4>
-                <h4><i class="fal fa-user-tag"></i> TAGGED</h4>
+                <h4><i class="far fa-calendar-alt"></i> POSTS</h4>
+                <h4><i class="fas fa-user-tag"></i> TAGGED</h4>
             </div>
             <section>
                 <div ng-repeat="picture in $ctrl.pictures" style="background: url({{picture.url}}); background-size:cover; background-repeat:no-repeat;" title="{{picture.attr}}"></div>
