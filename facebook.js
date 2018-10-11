@@ -32,10 +32,10 @@ const facebook = {
     </div>
     <div id="fb-menu" ng-init="friends=8" >
         <div></div>
-        <div>Facebook</div>
-        <div><a href="#!/twitter" ng-click="social='twitter'">Twitter</a></div>
+        <div>Timeline</div>
+        <div>About</div>
         <div ng-click="friends = friends + 1">Friends <span >{{friends}} Mutual</span></div>
-        <div><a href="#!/instagram">Instagram</a></div>
+        <div>Photos</div>
         <div>More <i class="fas fa-caret-down"></i></div>
         <div></div>
     </div>

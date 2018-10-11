@@ -1,13 +1,18 @@
 header {
-    height: 200px;
+    /* height: 200px; */
     background: linear-gradient(to bottom right, white, pearl);
-    background: white;
+    background: #1da0f210;
     margin: 0;
-    display: flex;
-    padding: 2% 20%;
-    border-bottom: 1px solid darkslategrey;
+    display: grid;
+    /* padding: 2% 20%; */
+    border-bottom: 1px solid #1da1f2;
     font-family: "Cabin";
-    
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". face text text .";
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 header div {
@@ -20,6 +25,7 @@ header div {
     border-radius: 50%;
     border: 10px inset lavender;
     margin-right: 20px;
+    grid-area: face;
 }
 
 header p {
@@ -28,10 +34,38 @@ header p {
     font-size: 21px;
     line-height: 33px;
     align-self: center;
+    grid-area: text;
 }
 
 header span {
     border-bottom: 2px solid lavender;
     font-family: "Roboto Condensed";
     font-size: 22px;
+}
+
+@media only screen and (max-width: 1000px) {
+    header {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        ". . face . ."
+        ". text text text .";
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+         ". face ."
+         "text text text";
+    }
+    header div, header p {
+        margin: 0 auto;
+    }
+    header p {
+        padding: 10px;
+    }
 }

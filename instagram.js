@@ -42,9 +42,9 @@ const instagram = {
                     <h4>Montaz Meah II</h4>
                     <p id="bio">Recently graduated from the Grand Circus Detroit full-time Javascript Front-End web development bootcamp.</p>
                 </div>
-                <div class="meta">
+                <!--div class="meta">
                     <p>See my simulated <strong><a href="#!/facebook">Facebook</a></strong> and <strong><a href="#!/twitter">Twitter</a></strong>.</p>
-                </div>
+                </div-->
                 <div class="meta">
                     <p>See my actual <strong><a href="https://codepen.io/dashboard?type=view&opts_itemType=pen&opts_filter=all&opts_orderBy=id&opts_orderDirection=0&opts_tag=0&displayType=grid&previewType=iframe&page=0">Codepen</a></strong>, <strong><a href="https://answers.squarespace.com/users/14134/tazmeah.html">Squarespace</a></strong>, <strong><a href="https://www.linkedin.com/in/montaz-meah-ii/">LinkedIn</a></strong>, and <strong><a href="https://github.com/tazMeah?tab=repositories">GitHub</a></strong>.</p>
                 </div>

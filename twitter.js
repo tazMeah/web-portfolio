@@ -58,9 +58,9 @@ const twitter = {
         </div>
         <div class="middle">
             <div>
-                <h2>Twitter</h2>
-                <h2 class="accentColor"><a href="#!/facebook">Facebook</a></h2>
-                <h2 class="accentColor"><a href="#!/instagram">Instagram</a></h2>
+                <h2>Tweets</h2>
+                <h2 class="accentColor"><a>Tweets & replies</a></h2>
+                <h2 class="accentColor"><a>Media</a></h2>
             </div>
             <div>
                 <img src="4.jpeg" class="avatar">
