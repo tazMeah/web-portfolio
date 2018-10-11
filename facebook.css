@@ -65,7 +65,7 @@ nav input {
 }
 
 nav ::placeholder {
-    color: black;
+    color: #333;
 }
 
 #profile-container {

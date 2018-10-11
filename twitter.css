@@ -55,7 +55,7 @@ nav ::placeholder {
     line-height: 40px;
     border-bottom: 2px solid rgba(0,0,0,0);
     cursor: pointer;
-    color: black;
+    color: #333;
 }
 
 #socialLinks i span {
@@ -64,8 +64,8 @@ nav ::placeholder {
 }
 
 #socialLinks i:hover {
-    color: black;
-    border-bottom: 2px solid black;
+    color: #333;
+    border-bottom: 2px solid #333;
     transition: 200ms;
 }
 i.fa-twitter {
@@ -96,34 +96,50 @@ i span {
 #follow {
     box-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 3px 0px;
     background: white;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
 #follow > div {
     height: 60px;
     display: grid;
-    grid-template-columns: 23% 54% 23%;
-    /* padding: 0 70px; */
     max-width: 1190px;
     margin: 0 auto;
+    /* padding: 0 70px; */
+    /* grid-template-columns: 23% 54% 23%; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "left middle middle right";
 }
 
 main {
     display: grid;
-    grid-template-columns: 23% 54% 23%;
     max-width: 1190px;
     margin: 0 auto;
+    /* grid-template-columns: 23% 54% 23%; */
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "left middle middle right"
+        ". middle middle ."
+        ". middle middle .";
+
 }
 #follow .left {
     height: 60px;
     display: flex;
     justify-content: center;
-    width: 290px;
-    margin: 0 0 0 auto;
+    /* width: 290px; */
+    /* margin: 0 0 0 auto; */
+    grid-area: left;
 }
 #follow .middle {
     display: flex;
     height: 60px;
+    grid-area: middle;
 }
 
 #follow .middle div {
@@ -162,8 +178,9 @@ main {
     display: flex;
     align-items: center; 
     justify-content: center;
-    width: 290px;
-    margin: 0 auto 0 0;
+    /* width: 290px; */
+    /* margin: 0 auto 0 0; */
+    grid-area: right;
 }
 
 #follow button {
@@ -191,12 +208,15 @@ main {
 
 main {
     margin-top: 10px;
+    
 }
 
 main .middle {
     background: white;
     margin-left: 15px;
-    margin-right: 15px;
+    /* margin-right: 15px; */
+    grid-area: middle;
+   
 }
 
 main .middle div {
@@ -264,9 +284,14 @@ i.fa-badge-check {
 }
 
 main .left {
-    width: 290px;
-    margin: 0 0 0 auto;
     position: relative;
+    /* width: 290px; */
+    /* margin: 0 0 0 auto; */
+    grid-area: left;
+    padding-left: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    margin-left: 15px;
 }
 
 .left h2 {
@@ -276,12 +301,15 @@ main .left {
 #leftButton {
     background: #1da1f2;
     color: white;
+    margin-left: 15px;
 }
 
 
 main .right {
-    width: 290px;
-    margin: 0 auto 0 0;
+    /* width: 290px; */
+    /* margin: 0 auto 0 0; */
+    grid-area: right;
+    margin-left: 15px;
 }
 .who {
     display: flex;
@@ -316,7 +344,7 @@ main .right {
     top: 3px;
 }
 .who a {
-    color: black;
+    color: #333;
 }
 
 .who a:hover {
@@ -333,4 +361,106 @@ main .right {
 
 button:hover {
     background: #1da0f22f;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #follow > div {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "left middle right .";
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "left middle middle"
+            "right middle middle"
+            ". middle middle";
+        margin-right: 15px;
+    }
+
+   
+}
+
+@media only screen and (max-width: 1100px) {
+    #follow > div {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "middle right";
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "left right"
+            "middle middle"
+            "middle middle";
+    }
+
+    main .right {
+        background: white;
+    }
+
+    main .middle {
+        border-top: 1px solid #ddd;
+    }
+
+    #profilePic {
+        top: -300px;
+    }
+}
+
+
+@media only screen and (max-width: 778px) {
+    #img01 {
+        background-position: initial;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "left left"
+            "middle middle"
+            "middle middle";
+            margin: 0;
+    }
+
+    main .left, main .middle {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    main h2, main p {
+        text-align: center;
+    }
+
+    main #leftButton {
+        display: flex;
+        justify-self: center;
+        margin: 50px auto 0  auto !important;
+        align-items: initial;
+    }
+
+    main .right {
+        display: none;
+    }
+
+    .who a {
+        margin-top: 10px;
+    }
+
+    #img01 {
+        /* background-size: contain; */
+        height: 300px;
+    }
+
+    .right button {
+        padding: 6px 10px;
+        width: initial !important;
+    }
 }

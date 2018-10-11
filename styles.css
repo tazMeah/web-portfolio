@@ -18,30 +18,20 @@ header div {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
-    border: 10px inset oldlace;
+    border: 10px inset lavender;
     margin-right: 20px;
-
-    
-    /* border: 5px solid #549797;
-    border: 5px solid #fb8c8c;
-    border: 5px solid #667aa8;
-    border: 5px solid #fbd68c;
-    border: 5px solid #70C970;
-    /* border: 5px solid #76502C; */
-    /* border: 5px solid #21592e; */
-
 }
 
 header p {
     max-width: 600px;
-    color: rgba(0,0,0,.8);
-    font-size: 18px;
-    line-height: 26px;
+    color: rgb(51, 51, 51);
+    font-size: 21px;
+    line-height: 33px;
     align-self: center;
 }
 
 header span {
-    border-bottom: 2px solid oldlace;
+    border-bottom: 2px solid lavender;
     font-family: "Roboto Condensed";
     font-size: 22px;
 }

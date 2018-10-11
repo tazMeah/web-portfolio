@@ -145,15 +145,15 @@ a {
 }
 
 #tabs h4:hover {
-    border-top: 1px solid black;
-    color: black;
+    border-top: 1px solid #333;
+    color: #333;
     transition: 500ms;
 }
 
 #tabs h4:first-child {
     margin-right: 50px;
-    color: rgb(38, 38, 38);
-    border-top: 1px solid black;
+    color: #333;
+    border-top: 1px solid #333;
 }
 
 section {
