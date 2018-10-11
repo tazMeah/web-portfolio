@@ -3,16 +3,16 @@ const twitter = {
     template: `
     <link href="twitter.css" rel="stylesheet" type="text/css" >
     <nav>
-    <div id="socialLinks">
-    <a title="SquareSpace" href="https://answers.squarespace.com/users/14134/tazmeah.html"><i class="fab fa-squarespace"><span> Squarespace</span></i></a>
-    <a title="GitHub" href="https://github.com/tazMeah?tab=repositories"><i class="fab fa-github-square"><span> Github</span></i></a>
-    <a title="CodePen" href="https://codepen.io/dashboard?type=view&opts_itemType=pen&opts_filter=all&opts_orderBy=id&opts_orderDirection=0&opts_tag=0&displayType=grid&previewType=iframe&page=0"><i class="fab fa-codepen"><span> Codepen</span></i></a>
-    <a title="LinkedIn" href="https://www.linkedin.com/in/montaz-meah-ii/"><i class="fab fa-linkedin"><span> LinkedIn</span></i></a>
-</div>
-        <div>
+        <div id="socialLinks">
+            <a title="SquareSpace" href="https://answers.squarespace.com/users/14134/tazmeah.html"><i class="fab fa-squarespace"><span> Squarespace</span></i></a>
+            <a title="GitHub" href="https://github.com/tazMeah?tab=repositories"><i class="fab fa-github-square"><span> Github</span></i></a>
+            <a title="CodePen" href="https://codepen.io/dashboard?type=view&opts_itemType=pen&opts_filter=all&opts_orderBy=id&opts_orderDirection=0&opts_tag=0&displayType=grid&previewType=iframe&page=0"><i class="fab fa-codepen"><span> Codepen</span></i></a>
+            <a title="LinkedIn" href="https://www.linkedin.com/in/montaz-meah-ii/"><i class="fab fa-linkedin"><span> LinkedIn</span></i></a>
+        </div>
+        <div id="logo">
             <i class="fab fa-twitter"></i>
         </div>
-        <div>
+        <div id="search">
             <input placeholder="Montaz Meah II">
             <i class="fas fa-user-circle"></i>
             <button class="accentColor button">Tweet</button>

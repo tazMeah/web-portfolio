@@ -13,13 +13,15 @@ a:hover {
     text-decoration: underline;
 }
 nav {
-    height: 46px;
+    /* height: 46px; */
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr .5fr 1fr;
+    grid-template-columns: 3fr 1fr 3fr;
     align-items: center; 
     text-align: center;
     background: white;
+    grid-template-areas: "socialLinks logo search "
+    
 }
 
 nav i {
@@ -49,6 +51,7 @@ nav ::placeholder {
 
 #socialLinks {
     color: rgb(102, 117, 127);
+    grid-area: socialLinks;
 }
 
 #socialLinks i {
@@ -68,11 +71,20 @@ nav ::placeholder {
     border-bottom: 2px solid #333;
     transition: 200ms;
 }
+
+#logo {
+    grid-area: logo;
+}
+
 i.fa-twitter {
     color: #1da1f2;
 }
 i span {
     font-size: 14px;
+}
+
+#search {
+    grid-area: search;
 }
 
 #splash {
@@ -411,6 +423,17 @@ button:hover {
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    nav {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "logo search search search"
+            "socialLinks socialLinks socialLinks socialLinks";
+    }
+
+}
+
 
 @media only screen and (max-width: 778px) {
     #img01 {
@@ -463,4 +486,20 @@ button:hover {
         padding: 6px 10px;
         width: initial !important;
     }
+}
+
+@media only screen and (max-width: 475px) {
+    #logo, #socialLinks, #search i {
+        display: none;
+    }
+
+    nav {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "search";
+        background: #333;
+        padding: 10px 0;
+    }
+
+
 }
